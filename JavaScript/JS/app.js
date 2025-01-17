@@ -25,18 +25,18 @@ async function checkWeather(city) {
   document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
 
   if (data.weather[0].main == 'Clouds') {
-    document.querySelector('.weather-icon').src = '/weather-app-img/clouds.png';
+    document.querySelector('.weather-icon').src = "/Images/clouds.png";
   } else if (data.weather[0].main == 'Rain') {
-    document.querySelector('.weather-icon').src = '/weather-app-img/rain.png';
+    document.querySelector('.weather-icon').src = "/Images/rain.png";
   } else if (data.weather[0].main == 'Drizzle') {
     document.querySelector('.weather-icon').src =
-      '/weather-app-img/drizzle.png';
+      "/Images/drizzle.png";
   } else if (data.weather[0].main == 'Mist') {
-    document.querySelector('.weather-icon').src = '/weather-app-img/mist.png';
+    document.querySelector('.weather-icon').src = "/Images/mist.png";
   } else if (data.weather[0].main == 'Snow') {
-    document.querySelector('.weather-icon').src = '/weather-app-img/snow.png';
+    document.querySelector('.weather-icon').src = "Images/snow.png";
   } else if (data.weather[0].main == 'Wind') {
-    document.querySelector('.weather-icon').src = '/weather-app-img/wind.png';
+    document.querySelector('.weather-icon').src = "/Images/wind.png";
   }
 
     document.querySelector('.weather').style.display = 'block';
